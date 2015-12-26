@@ -19,11 +19,11 @@ import java.util.Set;
 public class Person extends AbstractPersistable<Long> {
 
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 50)
     private String firstName;
 
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 50)
     private String lastName;
 
     @OneToMany(cascade = CascadeType.ALL)
